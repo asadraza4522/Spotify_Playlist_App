@@ -29,7 +29,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 ```bash
 git clone https://github.com/asadraza4522/Spotify_Playlist_App.git
-cd CinemaShot
+cd Spotify_Playlist_App
 ```
 
 ### Install Dependencies
