@@ -67,7 +67,7 @@ npx react-native run-ios
 
 ## Download the App
 
-- [Download Android APK](https://www.mediafire.com/file/kywyuaod4wpes9g/app-release.apk/file)
+- [Download Android APK](https://www.mediafire.com/file/kywyuaod4wpes9g/Spotify-Playlist-App.apk/file)
 
 ## Contributors
 [Asad Raza](https://github.com/asadraza4522) - Creator and maintainer
