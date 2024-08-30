@@ -16,7 +16,6 @@ import useFetchTracksDetails from '../hooks/useFetchTracksDetails';
 const TrackDetailsScreen = ({route}) => {
   const {trackId, trackName} = route.params;
   const track = useFetchTracksDetails(trackId);
-  console.log('🚀 ~ TrackDetailsScreen ~ track:', JSON.stringify(track));
   const convertDurationToTime = useMemo(() => {
     const totalSeconds = Math.floor(track.duration_ms / 1000);
     const hours = Math.floor(totalSeconds / 3600);

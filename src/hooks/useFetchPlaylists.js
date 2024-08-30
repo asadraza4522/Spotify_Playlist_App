@@ -6,7 +6,6 @@ import useApi from '../api/request';
 
 const useFetchPlaylists = () => {
   const location = useRecoilValue(userLocationState);
-  console.log('🚀 ~ useFetchPlaylists ~ location:', location);
   const [playlists, setPlaylists] = useRecoilState(playlistsState);
   const token = useSpotifyAuth();
   const {getRecommendedPlaylist} = useApi();
@@ -17,7 +16,6 @@ const useFetchPlaylists = () => {
         .then(data => {
           if (data) {
             setPlaylists(data.playlists.items); // Store playlists in Recoil
-            // console.log('getRecommendedPlaylist ', JSON.stringify(data));
           }
         })
         .catch(error => {

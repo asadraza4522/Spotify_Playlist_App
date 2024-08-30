@@ -11,7 +11,6 @@ const config = {
 const useApi = () => {
   const token = useSpotifyAuth();
   config.headers.Authorization = `Bearer ${token}`;
-  console.log('config >>', JSON.stringify(config));
 
   const getRecommendedPlaylist = async location => {
     try {
@@ -25,10 +24,6 @@ const useApi = () => {
         .catch(err => {
           console.log('Getting Error ::::;', err);
         });
-      console.log(
-        'getRecommendedPlaylist api ::',
-        JSON.stringify(response?.data),
-      );
 
       return response?.data;
     } catch (error) {

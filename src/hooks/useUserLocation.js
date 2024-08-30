@@ -16,7 +16,6 @@ const useUserLocation = () => {
             PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
           );
           if (granted !== PermissionsAndroid.RESULTS.GRANTED) {
-            console.log('Location permission denied');
             return;
           }
         }
@@ -43,7 +42,6 @@ const useUserLocation = () => {
         )
         .then(result => {
           const countryCode = result?.data?.address?.country_code.toUpperCase();
-          console.log('reverseGeocode result :: ', countryCode);
           setLocation(countryCode); // Store the location in Recoil
         })
         .catch(error => {
